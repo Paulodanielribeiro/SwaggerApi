@@ -1,0 +1,26 @@
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - description
+        - price
+        - quantity
+      properties:
+        id:
+          type: integer
+          description: The auto-generated ID of the product
+        description:
+          type: string
+          description: The description of the product
+        price:
+          type: number
+          description: The price of the product
+        quantity:
+          type: number
+          description: The quantity of the product
+      example:
+        id: 1
+        description: Example product
+        price: 9.99
+        quantity: 100
